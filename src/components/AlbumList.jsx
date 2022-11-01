@@ -12,7 +12,7 @@ export default function AlbumList({toggle, setToggle}) {
     useEffect(getAlbums, [toggle]);
     return (
         <main className="album-list">
-            <h2>Albums go here</h2>
+            <h2>My Favorite Albums</h2>
             {
                 !albums
                     ? <p>Loading...</p>
