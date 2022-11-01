@@ -1,24 +1,26 @@
 .App {
   text-align: center;
+  background-color: #fff;
 }
 
 header{
-  border: 2px solid red;
+  border: 2px solid grey;
   margin: calc(1em + 1vw);
 }
 
 .album-list{
-  border: 2px solid gold;
+  border: 2px solid grey;
   margin: calc(1em + 1vw);
 }
 
 .album{
-  border: 2px solid grey;
+  border-bottom: 1px solid grey;
   margin: 1em;
+  padding-bottom: 1rem;
 }
 
 .add-album{
-  border: 2px solid green;
+  border: 2px solid grey;
   margin: calc(1em + 1vw);
   padding-bottom: 1rem;
 }

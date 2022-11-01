@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <AlbumList toggle={toggle} />
       <AddAlbum toggle={toggle} setToggle={setToggle} />
+      <AlbumList toggle={toggle} setToggle={setToggle}/>
     </div>
   );
 }
