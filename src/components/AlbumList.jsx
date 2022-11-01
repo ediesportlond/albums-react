@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import AlbumCard from "./AlbumCard";
 
-export default function AlbumList() {
+export default function AlbumList({toggle}) {
     const [albums, setAlbums] = useState();
     const getAlbums = () => {
         fetch("https://albums-api-ee.web.app/albums")
@@ -9,7 +9,7 @@ export default function AlbumList() {
             .then(albums => setAlbums(albums.message))
             .catch(console.error)
     }
-    useEffect(getAlbums, []);
+    useEffect(getAlbums, [toggle]);
     return (
         <main className="album-list">
             <h2>Albums go here</h2>
